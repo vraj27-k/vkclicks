@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", serif;
+}
+ /* Full-Screen Carousel */
+ #carousel {
+    height: 100vh; /* Full viewport height */
+}
+
+#photoCarousel .carousel-item {
+    height: 100vh; /* Each slide takes full height */
+}
+
+#photoCarousel .carousel-item img {
+    object-fit: cover; /* Prevents stretching */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.3); /* 30% transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 5px;
+    transition: all 0.5s ease;
+    animation: slideDown 1s ease-out;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.5rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline Hover Effect */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Navbar changes on scroll */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.7);
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption { 
+    padding: 15px;
+    border-radius: 10px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+#testimonial {
+    background-color: #f8f6f2;
+    padding: 50px 0;
+}
+
+.blockquote {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #fdfdfd;
+    border-left: 5px solid #787878;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+}
+.vk{
+    filter: grayscale(100%);
+}
+.vk:hover{
+    filter: grayscale(0%);
+}
+.navbar{
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 30px rgba(241, 239, 239, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hover Effect: Scale Up and Add Shadow */
+.card:hover {
+    transform: scale(0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure Images Fit Well */
+.card img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Slight Zoom Effect on Image */
+.card:hover img {
+    transform: scale(0.955);
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.footer__social{
+    display: flex;
+    column-gap: 1.5rem;
+  }
+  
+  .footer__social-link{
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  i{
+    color: white;
+    font-size: 25px;
+  }
+  .footer__copy{
+    display: block;
+    margin-top: 4.5rem;
+    text-align: center;                     
+    color: white;
+  }
+  .footer_social-link {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensures icons remain visible */
+    font-size: 24px; /* Adjust icon size if needed */
+    margin: 0 10px; /* Adds spacing between icons */
+}
+
+.footer_social-link:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
