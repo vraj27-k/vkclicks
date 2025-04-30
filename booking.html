@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - Vk Clicks</title>
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <form action="/booking" method="POST">
+
+    
+</head>
+<body style="background-image: url('image/log_bg.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <img src="image/logo.jpeg" class="rounded-pill " width="50px">
+                </li>
+            </ul>
+            <a class="navbar-brand p-2 fw-bold" href="#"><span class="fs-2"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">V</span>k<span
+                    class="fs-4"
+                    style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;letter-spacing:4px">
+                    Clicks</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link fs-6" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-6" href="#services" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="wedding.html">Wedding Photography</a></li>
+                            <li><a class="dropdown-item" href="birthday.html">Birthday Photography</a></li>
+                            <li><a class="dropdown-item" href="product.html">Product Photography</a></li>
+                            <li><a class="dropdown-item" href="fashion.html">Fashion Photography</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6" href="Portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link fs-6" href="booking.html">Booking</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row vh-100">
+            
+            <!-- Left Side - Image & Text -->
+            <div class="col-md-6 left-section d-flex align-items-center justify-content-center text-center text-white">
+                <div>
+                    <h1 class="fw-bold">Welcome to Vk Clicks</h1>
+                    <p class="lead">Capture your best moments with us!</p>
+                </div>
+            </div>
+
+            <!-- Right Side - Booking Form -->
+            <div class="col-md-6 right-section d-flex align-items-center mt-5">
+                <div class="form-container w-75 mx-auto p-4 shadow rounded fm">
+                    <h2 class="text-center mb-4" style="color: white;"  >📅 Book Your Session</h2>
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST" id="booking-form" >
+
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="ce4cefd0-e144-4cb3-b92f-6ca8902bd561">
+                    
+                        <div class="mb-3">
+                            <label for="name" class="form-label" style="color: white;">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="color: white;">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="phone" class="form-label" style="color: white;">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="service" class="form-label" style="color: white;">Select Service</label>
+                            <select id="service" name="service" class="form-control" required>
+                                <option value="Wedding Photography">Wedding Photography</option>
+                                <option value="Fashion Photography">Fashion Photography</option>
+                                <option value="Birthday Photography">Birthday Photography</option>
+                                <option value="Product Photography">Product Photography</option>
+                            </select>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="date" class="form-label" style="color: white;">Select Date</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                        </div>
+                    
+                        <!-- <div class="mb-3">
+                            <label for="message" class="form-label" style="color: white;">Additional Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+                        </div> -->
+                    
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                        <button type="submit" class="btn btn-dark w-100">Submit Booking</button>
+                    
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let isLoggedIn = localStorage.getItem("loggedInUser");
+            if (!isLoggedIn) {
+                alert("Please log in to access the booking page.");
+                window.location.href = "login.html";
+            }
+        });
+            document.getElementById("booking-form").addEventListener("submit", function(event){
+                setTimeout(function(){
+                    location.reload(); // Refresh the page after submission
+                }, 1000); // Adjust delay if needed
+            });
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
