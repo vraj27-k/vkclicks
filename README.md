@@ -45,3 +45,19 @@ Reach out directly through a working contact form integrated with Web3Forms.
 
 - 📅 Booking Page
 ![Booking Page](image/bookingpage.png)
+
+# 🛠️ Tech Stack
+- Frontend: HTML5, CSS3, JavaScript
+
+- Frameworks & Libraries:
+
+ Bootstrap 5
+
+ AOS (Animate On Scroll)
+
+ Font Awesome & Remix Icons
+
+- Forms: Web3Forms API for contact and booking submissions
+
+- Auth: LocalStorage-based login/signup with basic password validation
+
