@@ -14,7 +14,7 @@ View categorized services including:
 
    Product Photography
 
-🔍 Carousel & Visual Highlights
+- 🔍 Carousel & Visual Highlights
 A dynamic homepage carousel showcasing featured photography with captions.
 
 📅 Online Booking System
