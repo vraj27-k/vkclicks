@@ -36,3 +36,12 @@ Reach out directly through a working contact form integrated with Web3Forms.
 
 - 🏠 Home Page
 ![Home Page](image/homepage.png)
+
+- 🧑‍🎓 Portfolio
+![Portfolio Page](image/portfoliopage.png)
+
+- 🔐 Login Modal
+![Login Page](image/loginpage.png)
+
+- 📅 Booking Page
+![Booking Page](image/bookingpage.png)
