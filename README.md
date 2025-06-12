@@ -6,18 +6,18 @@ Vk Clicks is a modern, user-friendly photography booking platform built for capt
 📷 Explore Photography Services
 View categorized services including:
 
-   - Wedding Photography
+   -  Wedding Photography
 
-   - Birthday Photography
+   -  Birthday Photography
 
-   - Fashion Photography
+   -  Fashion Photography
 
-   - Product Photography
+   -  Product Photography
 
 - 🔍 Carousel & Visual Highlights
 A dynamic homepage carousel showcasing featured photography with captions.
 
-  - 📅 Online Booking System
+- 📅 Online Booking System
 Book your session through a clean, secure form integrated with Web3Forms.
 
 - 👤 User Authentication
