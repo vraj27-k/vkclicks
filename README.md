@@ -49,13 +49,7 @@ Reach out directly through a working contact form integrated with Web3Forms.
 # 🛠️ Tech Stack
 - Frontend: HTML5, CSS3, JavaScript
 
-- Frameworks & Libraries:
-
- Bootstrap 5
-
- AOS (Animate On Scroll)
-
- Font Awesome & Remix Icons
+- Frameworks & Libraries:Bootstrap 5 , AOS (Animate On Scroll) ,Font Awesome & Remix Icons
 
 - Forms: Web3Forms API for contact and booking submissions
 
