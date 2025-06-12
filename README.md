@@ -17,7 +17,7 @@ View categorized services including:
 - 🔍 Carousel & Visual Highlights
 A dynamic homepage carousel showcasing featured photography with captions.
 
-- 📅 Online Booking System
+  - 📅 Online Booking System
 Book your session through a clean, secure form integrated with Web3Forms.
 
 - 👤 User Authentication
