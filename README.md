@@ -35,4 +35,4 @@ Reach out directly through a working contact form integrated with Web3Forms.
 # 🖼️ Screenshots
 
 - 🏠 Home Page
-
+![Home Page](images/homepage.png)
